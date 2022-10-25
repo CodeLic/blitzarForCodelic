@@ -51,6 +51,7 @@ const emit = defineEmits<{
   (e: 'update:rowsPerPage', payload: number): void
   (e: 'update:pageNr', payload: number): void
   (e: 'update:searchValue', payload: string): void
+  (e: 'selectAllColumns', colId: string, targetRows: any[]): void
 }>()
 
 function getSortableProps(col?: BlitzColumn): { sortable: boolean } | undefined {
@@ -301,6 +302,14 @@ const gridTemplateAreas = computed(
   ${fRowsPerPage.value && !fShownRowsInfo.value ? `'rows-per-page rows-per-page'` : ''}
   ${!fRowsPerPage.value && fShownRowsInfo.value ? `'shown-rows-info shown-rows-info'` : ''}`
 )
+
+function selectAllColumns(columnId: string, selectedRows: any[]): void {
+  emit(
+    'selectAllColumns',
+    columnId,
+    selectedRows.map((row) => row.id)
+  )
+}
 </script>
 
 <template>
@@ -349,6 +358,7 @@ const gridTemplateAreas = computed(
               v-model:sortState="sortState"
               :column="col"
               :lang="lang"
+              @selectAllColumns="(columnId: string) => selectAllColumns(columnId, rows)"
             />
           </template>
         </tr>

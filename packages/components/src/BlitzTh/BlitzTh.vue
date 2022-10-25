@@ -19,11 +19,15 @@ const props = defineProps<{
 
 const emit = defineEmits<{
   (e: 'update:sortState', payload: SortState): void
+  (e: 'selectAllColumns', columnId: string): void
 }>()
 
 function onClick(e: MouseEvent) {
   const { id, sortable } = props.column
   if (!sortable || !id) return
+  if (!sortable) {
+    emit('selectAllColumns', props.column.id ?? '')
+  }
 
   e.stopPropagation()
 
