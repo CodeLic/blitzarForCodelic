@@ -22,7 +22,7 @@ const schemaColumnsAndGrid: BlitzColumn[] = [
     dynamicProps: ['src'],
     style: 'min-height: 50px; min-width: 50px', // to prevent UI bounce before images are loaded
   },
-  { id: 'firstName', label: 'First Name' },
+  { id: 'firstName', label: 'First Name', sortable: false },
   {
     id: 'birthdate',
     label: 'Birthdate',
@@ -86,6 +86,10 @@ const filterOptions: BlitzFilterOptions = {
 onMounted(async () => {
   rows.value = (await import('./users.json')).default
 })
+
+function logTest(value) {
+  console.log(value)
+}
 </script>
 
 <template>
@@ -118,6 +122,7 @@ onMounted(async () => {
         ],
       }"
       :shownRowsInfoField="{ component: 'div' }"
+      @update:currentRowIndices="logTest"
     />
   </div>
 </template>

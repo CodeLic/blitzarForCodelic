@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ref, computed, watchEffect, onBeforeMount, useSlots, defineComponent } from 'vue'
+import { ref, computed, watchEffect, onBeforeMount, useSlots, defineComponent, watch } from 'vue'
 import { merge } from 'merge-anything'
 import { isFunction, isFullArray, isBoolean, isFullString } from 'is-what'
 import { getBlitzFieldOverwrites } from '../helpersForm'
@@ -51,7 +51,7 @@ const emit = defineEmits<{
   (e: 'update:rowsPerPage', payload: number): void
   (e: 'update:pageNr', payload: number): void
   (e: 'update:searchValue', payload: string): void
-  (e: 'selectAllColumns', colId: string, targetRows: any[]): void
+  (e: 'update:currentRowIndices', payload: number[]): void
 }>()
 
 function getSortableProps(col?: BlitzColumn): { sortable: boolean } | undefined {
@@ -72,6 +72,10 @@ watchEffect(() => (isGridInner.value = Boolean(props.isGrid)))
  * The row indexes of all the rows currently shown in the table. Sorted, filtered, searched and all.
  */
 const currentRowIndexes = ref<number[]>([])
+
+watch(currentRowIndexes, (newVal) => {
+  emit('update:currentRowIndices', newVal)
+})
 
 /** SELECTION related state */
 const selectedRows = propToWriteableComputed(props.selectedRows, (newVal) =>
@@ -302,14 +306,6 @@ const gridTemplateAreas = computed(
   ${fRowsPerPage.value && !fShownRowsInfo.value ? `'rows-per-page rows-per-page'` : ''}
   ${!fRowsPerPage.value && fShownRowsInfo.value ? `'shown-rows-info shown-rows-info'` : ''}`
 )
-
-function selectAllColumns(columnId: string, selectedRows: any[]): void {
-  emit(
-    'selectAllColumns',
-    columnId,
-    selectedRows.map((row) => row.id)
-  )
-}
 </script>
 
 <template>
@@ -358,7 +354,6 @@ function selectAllColumns(columnId: string, selectedRows: any[]): void {
               v-model:sortState="sortState"
               :column="col"
               :lang="lang"
-              @selectAllColumns="(columnId: string) => selectAllColumns(columnId, rows)"
             />
           </template>
         </tr>
