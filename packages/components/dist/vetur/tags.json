@@ -1,0 +1,782 @@
+{
+  "app": {
+    "attributes": [],
+    "description": ""
+  },
+  "App": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-field": {
+    "attributes": [],
+    "description": ""
+  },
+  "BlitzField": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-filters": {
+    "attributes": [
+      "modelValue",
+      "filterOptions",
+      "tableMeta",
+      "inputField"
+    ],
+    "description": ""
+  },
+  "BlitzFilters": {
+    "attributes": [
+      "modelValue",
+      "filterOptions",
+      "tableMeta",
+      "inputField"
+    ],
+    "description": ""
+  },
+  "advanced": {
+    "attributes": [],
+    "description": ""
+  },
+  "Advanced": {
+    "attributes": [],
+    "description": ""
+  },
+  "combined": {
+    "attributes": [],
+    "description": ""
+  },
+  "Combined": {
+    "attributes": [],
+    "description": ""
+  },
+  "from-to": {
+    "attributes": [],
+    "description": ""
+  },
+  "FromTo": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-form": {
+    "attributes": [
+      "modelValue",
+      "id",
+      "schema",
+      "actionButtons",
+      "actionButtonDefaults",
+      "actionButtonsPosition",
+      "columnCount",
+      "gridGap",
+      "lang",
+      "mode",
+      "labelPosition",
+      "labelStyle",
+      "labelClasses",
+      "dynamicProps",
+      "internalLabels",
+      "internalErrors",
+      "showErrorsOn",
+      "formComponent"
+    ],
+    "description": "Here you can find all the information on the available props & events of BlitzForm.\n\nIf any of the documentation is unclear, feel free to [open an issue](https://github.com/cycraft/blitzar/issues) to ask for clarification!"
+  },
+  "BlitzForm": {
+    "attributes": [
+      "modelValue",
+      "id",
+      "schema",
+      "actionButtons",
+      "actionButtonDefaults",
+      "actionButtonsPosition",
+      "columnCount",
+      "gridGap",
+      "lang",
+      "mode",
+      "labelPosition",
+      "labelStyle",
+      "labelClasses",
+      "dynamicProps",
+      "internalLabels",
+      "internalErrors",
+      "showErrorsOn",
+      "formComponent"
+    ],
+    "description": "Here you can find all the information on the available props & events of BlitzForm.\n\nIf any of the documentation is unclear, feel free to [open an issue](https://github.com/cycraft/blitzar/issues) to ask for clarification!"
+  },
+  "action-buttons-custom-action-buttons": {
+    "attributes": [],
+    "description": ""
+  },
+  "ActionButtonsCustomActionButtons": {
+    "attributes": [],
+    "description": ""
+  },
+  "action-buttons-overwriting-premade-action-buttons": {
+    "attributes": [],
+    "description": ""
+  },
+  "ActionButtonsOverwritingPremadeActionButtons": {
+    "attributes": [],
+    "description": ""
+  },
+  "action-buttons-premade-action-buttons": {
+    "attributes": [],
+    "description": ""
+  },
+  "ActionButtonsPremadeActionButtons": {
+    "attributes": [],
+    "description": ""
+  },
+  "basics-custom-components-auth": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsCustomComponentsAuth": {
+    "attributes": [],
+    "description": ""
+  },
+  "basics-custom-components-basic": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsCustomComponentsBasic": {
+    "attributes": [],
+    "description": ""
+  },
+  "basics-html5-elements": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsHtml5Elements": {
+    "attributes": [],
+    "description": ""
+  },
+  "computed-field-values-1": {
+    "attributes": [],
+    "description": ""
+  },
+  "ComputedFieldValues1": {
+    "attributes": [],
+    "description": ""
+  },
+  "computed-field-values-2": {
+    "attributes": [],
+    "description": ""
+  },
+  "ComputedFieldValues2": {
+    "attributes": [],
+    "description": ""
+  },
+  "computed-field-values-3": {
+    "attributes": [],
+    "description": ""
+  },
+  "ComputedFieldValues3": {
+    "attributes": [],
+    "description": ""
+  },
+  "dynamic-props-1": {
+    "attributes": [],
+    "description": ""
+  },
+  "DynamicProps1": {
+    "attributes": [],
+    "description": ""
+  },
+  "dynamic-props-2": {
+    "attributes": [],
+    "description": ""
+  },
+  "DynamicProps2": {
+    "attributes": [],
+    "description": ""
+  },
+  "dynamic-props-3": {
+    "attributes": [],
+    "description": ""
+  },
+  "DynamicProps3": {
+    "attributes": [],
+    "description": ""
+  },
+  "dynamic-props-4": {
+    "attributes": [],
+    "description": ""
+  },
+  "DynamicProps4": {
+    "attributes": [],
+    "description": ""
+  },
+  "dynamic-props-5": {
+    "attributes": [],
+    "description": ""
+  },
+  "DynamicProps5": {
+    "attributes": [],
+    "description": ""
+  },
+  "events-field-events": {
+    "attributes": [],
+    "description": ""
+  },
+  "EventsFieldEvents": {
+    "attributes": [],
+    "description": ""
+  },
+  "events-form-events": {
+    "attributes": [],
+    "description": ""
+  },
+  "EventsFormEvents": {
+    "attributes": [],
+    "description": ""
+  },
+  "events-update-other-fields-on-events": {
+    "attributes": [],
+    "description": ""
+  },
+  "EventsUpdateOtherFieldsOnEvents": {
+    "attributes": [],
+    "description": ""
+  },
+  "form-data-clearing-the-form": {
+    "attributes": [],
+    "description": ""
+  },
+  "FormDataClearingTheForm": {
+    "attributes": [],
+    "description": ""
+  },
+  "form-data-list-forms": {
+    "attributes": [],
+    "description": ""
+  },
+  "FormDataListForms": {
+    "attributes": [],
+    "description": ""
+  },
+  "form-data-nested-data": {
+    "attributes": [],
+    "description": ""
+  },
+  "FormDataNestedData": {
+    "attributes": [],
+    "description": ""
+  },
+  "form-data-resetting-the-form": {
+    "attributes": [],
+    "description": ""
+  },
+  "FormDataResettingTheForm": {
+    "attributes": [],
+    "description": ""
+  },
+  "modes-disable-fields-on-readonly-mode": {
+    "attributes": [],
+    "description": ""
+  },
+  "ModesDisableFieldsOnReadonlyMode": {
+    "attributes": [],
+    "description": ""
+  },
+  "modes": {
+    "attributes": [],
+    "description": ""
+  },
+  "Modes": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-action-buttons": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingActionButtons": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-custom-label-content": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingCustomLabelContent": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-custom-label-positioning": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingCustomLabelPositioning": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-left-labels": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingLeftLabels": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-raw-form-styling": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingRawFormStyling": {
+    "attributes": [],
+    "description": ""
+  },
+  "validation-on-every-keystroke": {
+    "attributes": [],
+    "description": ""
+  },
+  "ValidationOnEveryKeystroke": {
+    "attributes": [],
+    "description": ""
+  },
+  "validation-on-save": {
+    "attributes": [],
+    "description": ""
+  },
+  "ValidationOnSave": {
+    "attributes": [],
+    "description": ""
+  },
+  "validation-programatically": {
+    "attributes": [],
+    "description": ""
+  },
+  "ValidationProgramatically": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-grid-toggle": {
+    "attributes": [
+      "modelValue"
+    ],
+    "description": ""
+  },
+  "BlitzGridToggle": {
+    "attributes": [
+      "modelValue"
+    ],
+    "description": ""
+  },
+  "blitz-h": {
+    "attributes": [
+      "options"
+    ],
+    "description": "I'm still thinking about the best syntax for BlitzH"
+  },
+  "BlitzH": {
+    "attributes": [
+      "options"
+    ],
+    "description": "I'm still thinking about the best syntax for BlitzH"
+  },
+  "blitz-icon": {
+    "attributes": [
+      "kind"
+    ],
+    "description": ""
+  },
+  "BlitzIcon": {
+    "attributes": [
+      "kind"
+    ],
+    "description": ""
+  },
+  "blitz-input": {
+    "attributes": [
+      "icon",
+      "suffix",
+      "prefix",
+      "showCheck",
+      "hasError",
+      "isBusy",
+      "type",
+      "options",
+      "placeholder",
+      "disabled",
+      "readonly",
+      "required",
+      "autocomplete",
+      "min",
+      "rows",
+      "modelValue",
+      "autofocus",
+      "autogrow",
+      "debounce",
+      "clearable",
+      "preventFocus"
+    ],
+    "description": ""
+  },
+  "BlitzInput": {
+    "attributes": [
+      "icon",
+      "suffix",
+      "prefix",
+      "showCheck",
+      "hasError",
+      "isBusy",
+      "type",
+      "options",
+      "placeholder",
+      "disabled",
+      "readonly",
+      "required",
+      "autocomplete",
+      "min",
+      "rows",
+      "modelValue",
+      "autofocus",
+      "autogrow",
+      "debounce",
+      "clearable",
+      "preventFocus"
+    ],
+    "description": ""
+  },
+  "blitz-list-form": {
+    "attributes": [
+      "modelValue",
+      "schema",
+      "attrsToPass",
+      "maxRows",
+      "disabled",
+      "readonly"
+    ],
+    "description": "With BlitzListForm you can pass a `schema` just like a BlitzForm. The difference is that BlitzListForm is more like a (as the name says) _**list**_ form. 😃\n\nThe `schema` you specify is shown as a single row. New rows are added automatically on user input."
+  },
+  "BlitzListForm": {
+    "attributes": [
+      "modelValue",
+      "schema",
+      "attrsToPass",
+      "maxRows",
+      "disabled",
+      "readonly"
+    ],
+    "description": "With BlitzListForm you can pass a `schema` just like a BlitzForm. The difference is that BlitzListForm is more like a (as the name says) _**list**_ form. 😃\n\nThe `schema` you specify is shown as a single row. New rows are added automatically on user input."
+  },
+  "basics-multirow-example": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsMultirowExample": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitzform-example": {
+    "attributes": [],
+    "description": ""
+  },
+  "BlitzformExample": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-pagination": {
+    "attributes": [],
+    "description": ""
+  },
+  "BlitzPagination": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-spinner": {
+    "attributes": [
+      "size",
+      "thickness"
+    ],
+    "description": "Color of the spinner can be applied via CSS."
+  },
+  "BlitzSpinner": {
+    "attributes": [
+      "size",
+      "thickness"
+    ],
+    "description": "Color of the spinner can be applied via CSS."
+  },
+  "blitz-table": {
+    "attributes": [],
+    "description": ""
+  },
+  "BlitzTable": {
+    "attributes": [],
+    "description": ""
+  },
+  "basics-advanced-example": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsAdvancedExample": {
+    "attributes": [],
+    "description": ""
+  },
+  "basics-basic-example": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsBasicExample": {
+    "attributes": [],
+    "description": ""
+  },
+  "basics-example-html5-components": {
+    "attributes": [],
+    "description": ""
+  },
+  "BasicsExampleHtml5Components": {
+    "attributes": [],
+    "description": ""
+  },
+  "column-features-combining-columns": {
+    "attributes": [],
+    "description": ""
+  },
+  "ColumnFeaturesCombiningColumns": {
+    "attributes": [],
+    "description": ""
+  },
+  "column-features-grid-view": {
+    "attributes": [],
+    "description": ""
+  },
+  "ColumnFeaturesGridView": {
+    "attributes": [],
+    "description": ""
+  },
+  "column-features-mutating-columns": {
+    "attributes": [],
+    "description": ""
+  },
+  "ColumnFeaturesMutatingColumns": {
+    "attributes": [],
+    "description": ""
+  },
+  "column-features-nested-data": {
+    "attributes": [],
+    "description": ""
+  },
+  "ColumnFeaturesNestedData": {
+    "attributes": [],
+    "description": ""
+  },
+  "computed-columns": {
+    "attributes": [],
+    "description": ""
+  },
+  "ComputedColumns": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-adding-a-new-row": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingAddingANewRow": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-delete-a-row-from-blitztable": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingDeleteARowFromBlitztable": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-delete-a-row-from-parent": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingDeleteARowFromParent": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-inline": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingInline": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-modal-on-button-click": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingModalOnButtonClick": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-modal-on-row-click": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingModalOnRowClick": {
+    "attributes": [],
+    "description": ""
+  },
+  "editing-on-cell-doubleclick": {
+    "attributes": [],
+    "description": ""
+  },
+  "EditingOnCellDoubleclick": {
+    "attributes": [],
+    "description": ""
+  },
+  "filtering-advanced": {
+    "attributes": [],
+    "description": ""
+  },
+  "FilteringAdvanced": {
+    "attributes": [],
+    "description": ""
+  },
+  "filtering-auto-detect-filter-values": {
+    "attributes": [],
+    "description": ""
+  },
+  "FilteringAutoDetectFilterValues": {
+    "attributes": [],
+    "description": ""
+  },
+  "filtering-range": {
+    "attributes": [],
+    "description": ""
+  },
+  "FilteringRange": {
+    "attributes": [],
+    "description": ""
+  },
+  "custom-th": {
+    "attributes": [
+      "column",
+      "sortState"
+    ],
+    "description": ""
+  },
+  "CustomTh": {
+    "attributes": [
+      "column",
+      "sortState"
+    ],
+    "description": ""
+  },
+  "selection": {
+    "attributes": [],
+    "description": ""
+  },
+  "Selection": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-extra-components-via-slots": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingExtraComponentsViaSlots": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-reusable-complex-styling": {
+    "attributes": [
+      "rows",
+      "schemaColumns",
+      "schemaGrid",
+      "title"
+    ],
+    "description": ""
+  },
+  "StylingReusableComplexStyling": {
+    "attributes": [
+      "rows",
+      "schemaColumns",
+      "schemaGrid",
+      "title"
+    ],
+    "description": ""
+  },
+  "styling-show-row-numbers": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingShowRowNumbers": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-via-css": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingViaCss": {
+    "attributes": [],
+    "description": ""
+  },
+  "styling-via-props": {
+    "attributes": [],
+    "description": ""
+  },
+  "StylingViaProps": {
+    "attributes": [],
+    "description": ""
+  },
+  "table-parts-th": {
+    "attributes": [],
+    "description": ""
+  },
+  "TablePartsTh": {
+    "attributes": [],
+    "description": ""
+  },
+  "blitz-th": {
+    "attributes": [
+      "column",
+      "sortState",
+      "lang"
+    ],
+    "description": ""
+  },
+  "BlitzTh": {
+    "attributes": [
+      "column",
+      "sortState",
+      "lang"
+    ],
+    "description": ""
+  },
+  "basic": {
+    "attributes": [],
+    "description": ""
+  },
+  "Basic": {
+    "attributes": [],
+    "description": ""
+  },
+  "lang": {
+    "attributes": [],
+    "description": ""
+  },
+  "Lang": {
+    "attributes": [],
+    "description": ""
+  },
+  "sort": {
+    "attributes": [],
+    "description": ""
+  },
+  "Sort": {
+    "attributes": [],
+    "description": ""
+  },
+  "iframe-wrapper": {
+    "attributes": [],
+    "description": ""
+  },
+  "IframeWrapper": {
+    "attributes": [],
+    "description": ""
+  }
+}

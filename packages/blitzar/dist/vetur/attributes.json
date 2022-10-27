@@ -1,0 +1,512 @@
+{
+  "blitz-filters/modelValue": {
+    "type": "FiltersState",
+    "description": "Must use with v-model"
+  },
+  "BlitzFilters/modelValue": {
+    "type": "FiltersState",
+    "description": "Must use with v-model"
+  },
+  "blitz-filters/filterOptions": {
+    "type": "BlitzFilterOptions"
+  },
+  "BlitzFilters/filterOptions": {
+    "type": "BlitzFilterOptions"
+  },
+  "blitz-filters/tableMeta": {
+    "type": "TableMeta"
+  },
+  "BlitzFilters/tableMeta": {
+    "type": "TableMeta"
+  },
+  "blitz-filters/inputField": {
+    "type": "BlitzFieldProps"
+  },
+  "BlitzFilters/inputField": {
+    "type": "BlitzFieldProps"
+  },
+  "blitz-form/modelValue": {
+    "type": "Record<string, any>",
+    "description": "An object with the data of the entire form. The object keys are the ids of the fields passed in the `schema`.\n\nTo be used with `:modelValue` or `v-model`."
+  },
+  "BlitzForm/modelValue": {
+    "type": "Record<string, any>",
+    "description": "An object with the data of the entire form. The object keys are the ids of the fields passed in the `schema`.\n\nTo be used with `:modelValue` or `v-model`."
+  },
+  "blitz-form/id": {
+    "type": "string",
+    "description": "A manually set `id` of the BlitzForm. This prop is accessible in the `context` (as `formId`) of any Dynamic Prop and event.\n\nRead more on Dynamic Props in its dedicated page."
+  },
+  "BlitzForm/id": {
+    "type": "string",
+    "description": "A manually set `id` of the BlitzForm. This prop is accessible in the `context` (as `formId`) of any Dynamic Prop and event.\n\nRead more on Dynamic Props in its dedicated page."
+  },
+  "blitz-form/schema": {
+    "type": "array",
+    "description": "This is the heart of your BlitzForm. It's the schema that defines what fields will be generated.\n\nThe possible props you can pass are:\n- BlitzField props (see BlitzField API Card in the documentation)\n- any props of the actual component you define\n\n```js\n[{id: 'name', label: 'Name', component: 'input', style: 'color: white'}, {id: 'age', label: 'Age', component: 'input', type: 'number', style: 'color: white'}]\n```"
+  },
+  "BlitzForm/schema": {
+    "type": "array",
+    "description": "This is the heart of your BlitzForm. It's the schema that defines what fields will be generated.\n\nThe possible props you can pass are:\n- BlitzField props (see BlitzField API Card in the documentation)\n- any props of the actual component you define\n\n```js\n[{id: 'name', label: 'Name', component: 'input', style: 'color: white'}, {id: 'age', label: 'Age', component: 'input', type: 'number', style: 'color: white'}]\n```"
+  },
+  "blitz-form/actionButtons": {
+    "type": "array",
+    "description": "Buttons on top of the form that control the `mode` of the form. The possible pre-made buttons are:\n- `'edit'` — a button which puts the form in 'edit' mode & does `emit('edit')`\n- `'cancel'` — a button which puts the form in 'readonly' mode & does `emit('cancel')`\n- `'save'` — a button which puts the form in 'edit' mode & does `emit('save', {newData, oldData})`\n- `'delete'` — a red button which does `emit('delete')`\n- `'archive'` — a red button which does `emit('archive')`\n\nYou can also pass custom buttons with the same schema to generate forms.\n\nSee the documentation on Action Buttons for more info.\n\n```js\n['delete', 'cancel', 'edit', 'save']\n```\n\n```js\n[{component: 'button', type: 'button', slot: 'log', events: {click: console.log}}]\n```"
+  },
+  "BlitzForm/actionButtons": {
+    "type": "array",
+    "description": "Buttons on top of the form that control the `mode` of the form. The possible pre-made buttons are:\n- `'edit'` — a button which puts the form in 'edit' mode & does `emit('edit')`\n- `'cancel'` — a button which puts the form in 'readonly' mode & does `emit('cancel')`\n- `'save'` — a button which puts the form in 'edit' mode & does `emit('save', {newData, oldData})`\n- `'delete'` — a red button which does `emit('delete')`\n- `'archive'` — a red button which does `emit('archive')`\n\nYou can also pass custom buttons with the same schema to generate forms.\n\nSee the documentation on Action Buttons for more info.\n\n```js\n['delete', 'cancel', 'edit', 'save']\n```\n\n```js\n[{component: 'button', type: 'button', slot: 'log', events: {click: console.log}}]\n```"
+  },
+  "blitz-form/actionButtonDefaults": {
+    "type": "{\r\n  edit?: Record<string, any>\r\n  cancel?: Record<string, any>\r\n  save?: Record<string, any>\r\n  delete?: Record<string, any>\r\n  archive?: Record<string, any>\r\n}",
+    "description": "You can overwrite the schema used for the default action buttons for edit, cancel, save, delete & archive.\n\n```js\n{'save': {push: true}, 'delete': {color: 'secondary'}}\n```"
+  },
+  "BlitzForm/actionButtonDefaults": {
+    "type": "{\r\n  edit?: Record<string, any>\r\n  cancel?: Record<string, any>\r\n  save?: Record<string, any>\r\n  delete?: Record<string, any>\r\n  archive?: Record<string, any>\r\n}",
+    "description": "You can overwrite the schema used for the default action buttons for edit, cancel, save, delete & archive.\n\n```js\n{'save': {push: true}, 'delete': {color: 'secondary'}}\n```"
+  },
+  "blitz-form/actionButtonsPosition": {
+    "type": "string",
+    "description": "The position of the action buttons.",
+    "options": [
+      "top",
+      "bottom",
+      "right",
+      "left"
+    ]
+  },
+  "BlitzForm/actionButtonsPosition": {
+    "type": "string",
+    "description": "The position of the action buttons.",
+    "options": [
+      "top",
+      "bottom",
+      "right",
+      "left"
+    ]
+  },
+  "blitz-form/columnCount": {
+    "type": "number",
+    "description": "The amount of columns the form should have. Each field can set a specific 'span' to be able to span multiple columns."
+  },
+  "BlitzForm/columnCount": {
+    "type": "number",
+    "description": "The amount of columns the form should have. Each field can set a specific 'span' to be able to span multiple columns."
+  },
+  "blitz-form/gridGap": {
+    "type": "string",
+    "description": "The size of the gap between each field in the form."
+  },
+  "BlitzForm/gridGap": {
+    "type": "string",
+    "description": "The size of the gap between each field in the form."
+  },
+  "blitz-form/lang": {
+    "type": "Partial<Lang>",
+    "description": "The text used in the UI for the action buttons and some error messages.\n\n```js\n{ cancel: 'キャンセル', edit: '編集', save: '保存' }\n```"
+  },
+  "BlitzForm/lang": {
+    "type": "Partial<Lang>",
+    "description": "The text used in the UI for the action buttons and some error messages.\n\n```js\n{ cancel: 'キャンセル', edit: '編集', save: '保存' }\n```"
+  },
+  "blitz-form/mode": {
+    "type": "Mode",
+    "description": "The mode represents how fields are rendered\n- `'edit'` — (default) show editable fields based on the schema\n- `'readonly'` — show each field with `readonly: true`\n- `'disabled'` — show each field with `disabled: true`\n- `'raw'` — used to show raw data of your form (for select components, it will show the data label instead of its value)\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields).",
+    "options": [
+      "edit",
+      "readonly",
+      "disabled",
+      "raw"
+    ]
+  },
+  "BlitzForm/mode": {
+    "type": "Mode",
+    "description": "The mode represents how fields are rendered\n- `'edit'` — (default) show editable fields based on the schema\n- `'readonly'` — show each field with `readonly: true`\n- `'disabled'` — show each field with `disabled: true`\n- `'raw'` — used to show raw data of your form (for select components, it will show the data label instead of its value)\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields).",
+    "options": [
+      "edit",
+      "readonly",
+      "disabled",
+      "raw"
+    ]
+  },
+  "blitz-form/labelPosition": {
+    "type": "string",
+    "description": "The position of the label in comparison to the field.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields).",
+    "options": [
+      "top",
+      "left"
+    ]
+  },
+  "BlitzForm/labelPosition": {
+    "type": "string",
+    "description": "The position of the label in comparison to the field.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields).",
+    "options": [
+      "top",
+      "left"
+    ]
+  },
+  "blitz-form/labelStyle": {
+    "type": "array",
+    "description": "Custom styling to be applied to the label of BlitzField. Applied like so `:style=\"componentStyle\"`. Can be an Dynamic Prop.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "BlitzForm/labelStyle": {
+    "type": "array",
+    "description": "Custom styling to be applied to the label of BlitzField. Applied like so `:style=\"componentStyle\"`. Can be an Dynamic Prop.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "blitz-form/labelClasses": {
+    "type": "array",
+    "description": "Custom classes to be applied to the label of BlitzField. Applied like so `:class=\"labelClasses\"`. Can be an Dynamic Prop.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "BlitzForm/labelClasses": {
+    "type": "array",
+    "description": "Custom classes to be applied to the label of BlitzField. Applied like so `:class=\"labelClasses\"`. Can be an Dynamic Prop.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "blitz-form/dynamicProps": {
+    "type": "array",
+    "description": "An array with prop names that should be treated as Dynamic Props when passed a function.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "BlitzForm/dynamicProps": {
+    "type": "array",
+    "description": "An array with prop names that should be treated as Dynamic Props when passed a function.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "blitz-form/internalLabels": {
+    "type": "boolean | undefined",
+    "description": "Set to `true` if the component will take care of showing the `label` and `subLabel`. Both of these props will be passed to the component and not shown in BlitzField.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "BlitzForm/internalLabels": {
+    "type": "boolean | undefined",
+    "description": "Set to `true` if the component will take care of showing the `label` and `subLabel`. Both of these props will be passed to the component and not shown in BlitzField.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "blitz-form/internalErrors": {
+    "type": "boolean | undefined",
+    "description": "Set to true if the component has its own error handling. This makes sure it passes on props like `error` and does nothing with them in the BlitzField.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "BlitzForm/internalErrors": {
+    "type": "boolean | undefined",
+    "description": "Set to true if the component has its own error handling. This makes sure it passes on props like `error` and does nothing with them in the BlitzField.\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields)."
+  },
+  "blitz-form/showErrorsOn": {
+    "type": "ShowErrorsOn",
+    "description": "- 'interaction' — evaluates & shows errors on every interaction or keystroke\n- 'save' — only evaluates & shows errors when clicking 'save'\n- 'save-focus' — only evaluates & shows errors when clicking 'save', then focuses the first field with an error\n- 'never' — never evaluate or show errors\n- 'always' — always evaluate and show errors, even without user interaction\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields).",
+    "options": [
+      "interaction",
+      "save",
+      "save-focus",
+      "never",
+      "always"
+    ]
+  },
+  "BlitzForm/showErrorsOn": {
+    "type": "ShowErrorsOn",
+    "description": "- 'interaction' — evaluates & shows errors on every interaction or keystroke\n- 'save' — only evaluates & shows errors when clicking 'save'\n- 'save-focus' — only evaluates & shows errors when clicking 'save', then focuses the first field with an error\n- 'never' — never evaluate or show errors\n- 'always' — always evaluate and show errors, even without user interaction\n\nThis prop can be set on a BlitzField or on a BlitzForm (in which case it's applied to all fields).",
+    "options": [
+      "interaction",
+      "save",
+      "save-focus",
+      "never",
+      "always"
+    ]
+  },
+  "blitz-form/formComponent": {
+    "type": "string | any",
+    "description": "The component that should be used to generate the form. Defaults to a div. You can pass the name of a native HTML5 element or Vue component that is globally registered. You can also import the Vue file and directly pass the imported object, just like you would when you add it to a Vue file's components prop."
+  },
+  "BlitzForm/formComponent": {
+    "type": "string | any",
+    "description": "The component that should be used to generate the form. Defaults to a div. You can pass the name of a native HTML5 element or Vue component that is globally registered. You can also import the Vue file and directly pass the imported object, just like you would when you add it to a Vue file's components prop."
+  },
+  "blitz-grid-toggle/modelValue": {
+    "type": "boolean",
+    "description": "`modelValue: true` represents \"grid mode\" so shows a \"list icon\"\n`modelValue: false` represents \"list mode\" so shows a \"grid icon\""
+  },
+  "BlitzGridToggle/modelValue": {
+    "type": "boolean",
+    "description": "`modelValue: true` represents \"grid mode\" so shows a \"list icon\"\n`modelValue: false` represents \"list mode\" so shows a \"grid icon\""
+  },
+  "blitz-h/options": {
+    "type": "array"
+  },
+  "BlitzH/options": {
+    "type": "array"
+  },
+  "blitz-icon/kind": {
+    "type": "Kind",
+    "description": "The kind of the icon\ne.g `synced, error, loading`"
+  },
+  "BlitzIcon/kind": {
+    "type": "Kind",
+    "description": "The kind of the icon\ne.g `synced, error, loading`"
+  },
+  "blitz-input/icon": {
+    "type": "PepiconName",
+    "description": "Pepicon icon name"
+  },
+  "BlitzInput/icon": {
+    "type": "PepiconName",
+    "description": "Pepicon icon name"
+  },
+  "blitz-input/suffix": {
+    "type": "string"
+  },
+  "BlitzInput/suffix": {
+    "type": "string"
+  },
+  "blitz-input/prefix": {
+    "type": "string"
+  },
+  "BlitzInput/prefix": {
+    "type": "string"
+  },
+  "blitz-input/showCheck": {
+    "type": "boolean",
+    "description": "Shows an '✅' icon on the right side of the input field."
+  },
+  "BlitzInput/showCheck": {
+    "type": "boolean",
+    "description": "Shows an '✅' icon on the right side of the input field."
+  },
+  "blitz-input/hasError": {
+    "type": "boolean",
+    "description": "Shows an '❌' icon on the right side of the input field."
+  },
+  "BlitzInput/hasError": {
+    "type": "boolean",
+    "description": "Shows an '❌' icon on the right side of the input field."
+  },
+  "blitz-input/isBusy": {
+    "type": "boolean",
+    "description": "Shows a loading icon on the right side of the input field."
+  },
+  "BlitzInput/isBusy": {
+    "type": "boolean",
+    "description": "Shows a loading icon on the right side of the input field."
+  },
+  "blitz-input/type": {
+    "type": "Type",
+    "description": "HTML5 attribute — with EXCEPTIONS!\n- Exception: can also be 'textarea' in which case a `<textarea />` is rendered\n- Exception: can also be 'select' in which case a `<select />` is rendered"
+  },
+  "BlitzInput/type": {
+    "type": "Type",
+    "description": "HTML5 attribute — with EXCEPTIONS!\n- Exception: can also be 'textarea' in which case a `<textarea />` is rendered\n- Exception: can also be 'select' in which case a `<select />` is rendered"
+  },
+  "blitz-input/options": {
+    "type": "Options",
+    "description": "Only when `type: 'select'`"
+  },
+  "BlitzInput/options": {
+    "type": "Options",
+    "description": "Only when `type: 'select'`"
+  },
+  "blitz-input/placeholder": {
+    "type": "string",
+    "description": "HTML5 attribute"
+  },
+  "BlitzInput/placeholder": {
+    "type": "string",
+    "description": "HTML5 attribute"
+  },
+  "blitz-input/disabled": {
+    "type": "boolean",
+    "description": "HTML5 attribute"
+  },
+  "BlitzInput/disabled": {
+    "type": "boolean",
+    "description": "HTML5 attribute"
+  },
+  "blitz-input/readonly": {
+    "type": "boolean",
+    "description": "HTML5 attribute"
+  },
+  "BlitzInput/readonly": {
+    "type": "boolean",
+    "description": "HTML5 attribute"
+  },
+  "blitz-input/required": {
+    "type": "boolean",
+    "description": "HTML5 attribute"
+  },
+  "BlitzInput/required": {
+    "type": "boolean",
+    "description": "HTML5 attribute"
+  },
+  "blitz-input/autocomplete": {
+    "type": "string",
+    "description": "HTML5 attribute"
+  },
+  "BlitzInput/autocomplete": {
+    "type": "string",
+    "description": "HTML5 attribute"
+  },
+  "blitz-input/min": {
+    "type": "string",
+    "description": "HTML5 attribute"
+  },
+  "BlitzInput/min": {
+    "type": "string",
+    "description": "HTML5 attribute"
+  },
+  "blitz-input/rows": {
+    "type": "string|number",
+    "description": "HTML5 attribute (only for type=\"textarea\")"
+  },
+  "BlitzInput/rows": {
+    "type": "string|number",
+    "description": "HTML5 attribute (only for type=\"textarea\")"
+  },
+  "blitz-input/modelValue": {
+    "type": "string|number|date",
+    "description": "v-model"
+  },
+  "BlitzInput/modelValue": {
+    "type": "string|number|date",
+    "description": "v-model"
+  },
+  "blitz-input/autofocus": {
+    "type": "boolean"
+  },
+  "BlitzInput/autofocus": {
+    "type": "boolean"
+  },
+  "blitz-input/autogrow": {
+    "type": "boolean"
+  },
+  "BlitzInput/autogrow": {
+    "type": "boolean"
+  },
+  "blitz-input/debounce": {
+    "type": "number"
+  },
+  "BlitzInput/debounce": {
+    "type": "number"
+  },
+  "blitz-input/clearable": {
+    "type": "boolean"
+  },
+  "BlitzInput/clearable": {
+    "type": "boolean"
+  },
+  "blitz-input/preventFocus": {
+    "type": "boolean"
+  },
+  "BlitzInput/preventFocus": {
+    "type": "boolean"
+  },
+  "blitz-list-form/modelValue": {
+    "type": "array"
+  },
+  "BlitzListForm/modelValue": {
+    "type": "array"
+  },
+  "blitz-list-form/schema": {
+    "type": "array",
+    "description": "This is the information on the columns you want to be shown. An array of objects just like a BlitzForm.\n\n```js\n[{ label: 'Amount', id: 'amount', component: 'input', type: 'number', style: 'color: white' }, { label: 'Currency', id: 'curr', component: 'select', slot: [{ component: 'option', value: '', slot: 'Select one', disabled: true }, { component: 'option', value: 'usd', slot: 'USD' }], style: 'color: white' }]\n```"
+  },
+  "BlitzListForm/schema": {
+    "type": "array",
+    "description": "This is the information on the columns you want to be shown. An array of objects just like a BlitzForm.\n\n```js\n[{ label: 'Amount', id: 'amount', component: 'input', type: 'number', style: 'color: white' }, { label: 'Currency', id: 'curr', component: 'select', slot: [{ component: 'option', value: '', slot: 'Select one', disabled: true }, { component: 'option', value: 'usd', slot: 'USD' }], style: 'color: white' }]\n```"
+  },
+  "blitz-list-form/attrsToPass": {
+    "type": "array",
+    "description": "A list of prop (attribute) names to be passed on to each single BlitzField generated in the list form.\n\nThis is useful when you want to use Dynamic Props in the schema of the mine form but need information from the top level BlitzForm."
+  },
+  "BlitzListForm/attrsToPass": {
+    "type": "array",
+    "description": "A list of prop (attribute) names to be passed on to each single BlitzField generated in the list form.\n\nThis is useful when you want to use Dynamic Props in the schema of the mine form but need information from the top level BlitzForm."
+  },
+  "blitz-list-form/maxRows": {
+    "type": "number",
+    "description": "Allows to limit the max amount of rows."
+  },
+  "BlitzListForm/maxRows": {
+    "type": "number",
+    "description": "Allows to limit the max amount of rows."
+  },
+  "blitz-list-form/disabled": {
+    "type": "boolean"
+  },
+  "BlitzListForm/disabled": {
+    "type": "boolean"
+  },
+  "blitz-list-form/readonly": {
+    "type": "boolean"
+  },
+  "BlitzListForm/readonly": {
+    "type": "boolean"
+  },
+  "blitz-spinner/size": {
+    "type": "number|string",
+    "description": "The size of the spinner\ncontrols the width and height\ne.g `xs, sm, md, lg, xl, 16, 24 etc`"
+  },
+  "BlitzSpinner/size": {
+    "type": "number|string",
+    "description": "The size of the spinner\ncontrols the width and height\ne.g `xs, sm, md, lg, xl, 16, 24 etc`"
+  },
+  "blitz-spinner/thickness": {
+    "type": "number"
+  },
+  "BlitzSpinner/thickness": {
+    "type": "number"
+  },
+  "custom-th/column": {
+    "type": "BlitzColumn",
+    "description": "The BlitzField object used for the columns"
+  },
+  "CustomTh/column": {
+    "type": "BlitzColumn",
+    "description": "The BlitzField object used for the columns"
+  },
+  "custom-th/sortState": {
+    "type": "SortState",
+    "description": "Currently only compatible with 1 column sorted"
+  },
+  "CustomTh/sortState": {
+    "type": "SortState",
+    "description": "Currently only compatible with 1 column sorted"
+  },
+  "styling-reusable-complex-styling/rows": {
+    "type": "Array"
+  },
+  "StylingReusableComplexStyling/rows": {
+    "type": "Array"
+  },
+  "styling-reusable-complex-styling/schemaColumns": {
+    "type": "Array"
+  },
+  "StylingReusableComplexStyling/schemaColumns": {
+    "type": "Array"
+  },
+  "styling-reusable-complex-styling/schemaGrid": {
+    "type": "Array"
+  },
+  "StylingReusableComplexStyling/schemaGrid": {
+    "type": "Array"
+  },
+  "styling-reusable-complex-styling/title": {
+    "type": "string"
+  },
+  "StylingReusableComplexStyling/title": {
+    "type": "string"
+  },
+  "blitz-th/column": {
+    "type": "BlitzColumn",
+    "description": "The BlitzField object used for the columns"
+  },
+  "BlitzTh/column": {
+    "type": "BlitzColumn",
+    "description": "The BlitzField object used for the columns"
+  },
+  "blitz-th/sortState": {
+    "type": "SortState",
+    "description": "Currently only compatible with 1 column sorted"
+  },
+  "BlitzTh/sortState": {
+    "type": "SortState",
+    "description": "Currently only compatible with 1 column sorted"
+  },
+  "blitz-th/lang": {
+    "type": "Record"
+  },
+  "BlitzTh/lang": {
+    "type": "Record"
+  }
+}
