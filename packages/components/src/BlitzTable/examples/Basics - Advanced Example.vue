@@ -87,7 +87,7 @@ onMounted(async () => {
   rows.value = (await import('./users.json')).default
 })
 
-function logTest(value) {
+function logTest(value: any) {
   console.log(value)
 }
 </script>
