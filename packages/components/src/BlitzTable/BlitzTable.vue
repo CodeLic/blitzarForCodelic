@@ -51,6 +51,7 @@ const emit = defineEmits<{
   (e: 'update:rowsPerPage', payload: number): void
   (e: 'update:pageNr', payload: number): void
   (e: 'update:searchValue', payload: string): void
+  (e: 'update:currentRowIndices', payload: number[]): void
 }>()
 
 function getSortableProps(col?: BlitzColumn): { sortable: boolean } | undefined {
@@ -71,6 +72,7 @@ watchEffect(() => (isGridInner.value = Boolean(props.isGrid)))
  * The row indexes of all the rows currently shown in the table. Sorted, filtered, searched and all.
  */
 const currentRowIndexes = ref<number[]>([])
+watchEffect(() => emit('update:currentRowIndices', currentRowIndexes.value))
 
 /** SELECTION related state */
 const selectedRows = propToWriteableComputed(props.selectedRows, (newVal) =>
