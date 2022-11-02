@@ -178,6 +178,8 @@ const {
   pageRowIndexes,
 } = tableMeta
 
+const highlightedRow = ref(NaN)
+
 // if there is no paginationField provided
 onBeforeMount(() => {
   if (!props.paginationField) {
@@ -205,6 +207,7 @@ function onRowClick(e: MouseEvent, rowData: Record<string, any>): void {
    * @property {MouseEvent} e the mouse e that occured
    * @property {Record<string, any>} payload the rowData
    */
+  highlightedRow.value = rowData?.id ?? NaN
   emit('rowClick', e, rowData)
 }
 function onRowDblclick(e: MouseEvent, rowData: Record<string, any>): void {
@@ -378,6 +381,7 @@ const gridTemplateAreas = computed(
               isGridInner ? 'blitz-table--grid-card' : 'blitz-table__row blitz-row',
               // rowProps.row.id ? `blitz-row__${rowProps.rows[rowIndex].id}` : '',
               // evaluate(rowClasses, rowProps),
+              highlightedRow === rows[rowIndex].id && props.isEnableHighlight ? '_highlighted' : '',
             ]"
             :schema="isGridInner ? schemaGridComputed || [] : schemaColumnsComputed || []"
             :modelValue="rows[rowIndex]"

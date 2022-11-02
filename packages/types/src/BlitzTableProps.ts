@@ -283,6 +283,7 @@ export const blitzTableProps = {
     type: Object as PropType<Record<string, string>>,
     default: (): Record<string, string> => ({}),
   },
+  isEnableHighlight: { type: Boolean, default: undefined },
 } as const
 
 export type BlitzTableProps = ExternalProps<typeof blitzTableProps>
